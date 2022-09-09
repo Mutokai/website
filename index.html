@@ -25,6 +25,11 @@
        }
     </style>
 
+    <!-- 
+      YouTube's embed code doesn't dynamically resize videos well, which makes 
+      the site look bad on mobile devices. This is a hack to put the videos
+      videos into a container that will cause the video to resize.
+    -->
     <style>
       .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
       .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
@@ -82,6 +87,11 @@
         </div>
           
         <div class="lead">Here are videos of our demonstrations at this years Obon Festival at Como Park in St. Paul, MN
+          <!--
+            By embedding the videos in an embed-container, they resize properly
+            on mobile devices. See the <style> embed towards the top of this
+            file for the CSS.
+          -->
           <div class="embed-container"><iframe src="https://www.youtube.com/embed/XWu4bnZHyVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><br>
           <div class="embed-container"><iframe src="https://www.youtube.com/embed/_R6roxUyCHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             </div>
